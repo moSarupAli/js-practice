@@ -8,8 +8,8 @@ console.log(typeof valueInNumber);
 console.log(typeof (valueInNumber));
 console.log(valueInNumber); */
 
-// "33" => 33
-// "33abc" => NaN
+// "33" => 33 (it's type is number)
+// "33abc" => NaN (it's type is number)
 // true => 1; false => 0
 
 let isLoggedIn = "sarup";
