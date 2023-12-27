@@ -88,6 +88,8 @@ console.log(instructor);
 //     "price": "free"
 // }
 
+// an example API https://api.github.com/users/hiteshchoudhary
+
 // randomuser me api, JSON formatter(see in code format, tree format, etc. format)
 
 // ***also we can get API as an array
