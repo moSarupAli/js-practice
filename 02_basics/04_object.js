@@ -81,6 +81,7 @@ console.log(instructor);
 
 
 // +++++ JSON +++++
+// ***we can get API in JSON format
 // {
 //     "name": "sarup",
 //     "coursename": "js in hindi",
@@ -89,6 +90,7 @@ console.log(instructor);
 
 // randomuser me api, JSON formatter(see in code format, tree format, etc. format)
 
+// ***also we can get API as an array
 [
     {},
     {},
