@@ -1,9 +1,14 @@
+### md stands for Markdown Documentation
 
+# Projects related to DOM
 
+## project link: [Click Me](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
+# Solution code
 
-# project 1
+## project 1
 
+```javascript
 const buttons = document.querySelectorAll('.button');
 console.log(buttons);
 
@@ -31,4 +36,5 @@ buttons.forEach( function(button) {
         }
     });
 });
+```
 
