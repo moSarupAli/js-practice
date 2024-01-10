@@ -25,11 +25,11 @@
     // setTimeout(changeText, 2000);
     const changeMe = setTimeout(changeText, 2000);
 
+    // clearTimeout(changeMe); // We have to set this on an Event not on entire document
     document.getElementById('stop').addEventListener('click', function(e){
         clearTimeout(changeMe);
         console.log(e);
         console.log("STOPPED");
     });
-    // clearTimeout(changeMe); // We have to set this on an Event not on entire document
 </script>
 </html>
