@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chai aur JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    /* setInterval(function(){
+        console.log("sarup", Date.now());
+    }, 1000) */
+
+    /* const sayDate = function () {
+        console.log("sarup", Date.now());
+    };
+    setInterval(sayDate, 1000); */
+
+    /* const sayDate = function (str) { // diff way of doing same as previous block of code
+        console.log(str, Date.now());
+    };
+    setInterval(sayDate, 1000, "Sarup"); // Yes setInterval() fn can take 3 argument, last arg is for arg of sayDate() fn */
+    
+    
+    /* const sayDate = function (str) {
+        console.log(str, Date.now());
+    };
+    const intervalId = setInterval(sayDate, 1000, "Sarup");
+
+    // clearInterval(intervalId); // We have to set this on an Event not on entire document
+    document.getElementById('stop').addEventListener('click', function(e){
+        clearInterval(intervalId);
+        // console.log(e);
+        console.log("STOPPED");
+    });
+    
+    // document.getElementById('start').addEventListener('click', setInterval(sayDate, 1000, "Ali")); */
+
+
+    // little assignment for start and stop button
+    let nIntervId = 0;
+
+    function displayDate(){
+        if(!nIntervId){
+            nIntervId = setInterval(createDate, 1000);
+            console.log(nIntervId, typeof(nIntervId));
+        }
+    }
+    function createDate(){
+        console.log("Sarup", Date.now());
+    }
+
+    function stopDate(){
+        clearInterval(nIntervId);
+        console.log("Stopped");
+        nIntervId = 0;
+    }
+
+    document.getElementById('start').addEventListener('click', displayDate);
+    document.getElementById('stop').addEventListener('click', stopDate);
+
+
+</script>
+
+</html>
